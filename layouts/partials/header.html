@@ -1,10 +1,19 @@
 <header>
     <div class="container-lg clearfix">
         <div class="col-12 header">
-            <a class="title-main" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            <a class="title-main" href="{{ .Site.Params.BaseURL2 }}">{{ .Site.Title }}</a>
             {{ with .Site.Params.subTitle }}
             <span class="title-sub">{{ . }}</span>
             {{ end }}
+            {{ if eq .Lang "en" }}
+            <p><a href="https://blog.wataash.com/ja">にほんご</a></p>
+            {{ end }}
+            {{ if eq .Lang "ja" }}
+            <p><a href="https://blog.wataash.com">English</a></p>
+            {{ end }}
+            <!-- {{ range $.Site.Home.AllTranslations }} -->
+            <!-- <p><a href="{{ .Site.Params.BaseURL2 }}">{{ .Language.LanguageName }}</a></p> -->
+            <!-- {{ end }} -->
         </div>
     </div>
 </header>

@@ -1,0 +1,86 @@
+{{ if .IsTranslated }}
+{{ range .Translations }}
+<a href="{{ .Permalink }}">{{ .Language.LanguageName }}: {{ .Title }}</a>
+{{ end }}
+{{ end }}
+
+<!-- debug -->
+<!-- https://gohugo.io/content-management/multilingual/ -->
+
+<!--
+{{ if .IsTranslated }}
+
+<ul>
+<li>.Language: {{ .Language }}</li>
+<li>.Language.LanguageName: {{ .Language.LanguageName }}</li>
+<li>.Language.Weight: {{ .Language.Weight }}</li>
+<li>.Lang: {{ .Lang }}</li>
+<li>.Permalink: {{ .Permalink }}</li>
+<li>.Title: {{ .Title }}</li>
+<li>.IsPage: {{ .IsPage }}</li>
+</ul>
+
+<h1>range .Translations</h1>
+<ul>
+{{ range .Translations }}
+<li>.Language: {{ .Language }}</li>
+<li>.Language.LanguageName: {{ .Language.LanguageName }}</li>
+<li>.Language.Weight: {{ .Language.Weight }}</li>
+<li>.Lang: {{ .Lang }}</li>
+<li>.Permalink: {{ .Permalink }}</li>
+<li>.Title: {{ .Title }}</li>
+<li>.IsPage: {{ .IsPage }}</li>
+{{ end }}
+</ul>
+
+<h1>range $.Site.Home.AllTranslations</h1>
+<ul>
+{{ range $.Site.Home.AllTranslations }}
+<li>---</li>
+<li>.Language: {{ .Language }}</li>
+<li>.Language.LanguageName: {{ .Language.LanguageName }}</li>
+<li>.Language.Weight: {{ .Language.Weight }}</li>
+<li>.Lang: {{ .Lang }}</li>
+<li>.Permalink: {{ .Permalink }}</li>
+<li>.Title: {{ .Title }}</li>
+<li>.IsPage: {{ .IsPage }}</li>
+{{ end }}
+</ul>
+
+<h1>if eq .Lang</h1>
+{{ if eq .Lang "ja" }}
+jajajaja
+{{ end }}
+{{ if eq .Lang "en" }}
+enenen
+{{ end }}
+
+<h1>if eq .Language.LanguageName</h1>
+{{ if eq .Language.LanguageName "English" }}
+enenen
+{{ end }}
+{{ if eq .Language.LanguageName "にほんご" }}
+jajajaja
+{{ end }}
+
+<h1>translations</h1>
+<h4>{{ i18n "translations" }}</h4>
+<ul>
+    {{ range .Translations }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+    </li>
+    {{ end }}
+</ul>
+
+<h1>links</h1>
+<ul>
+{{ range $.Site.Home.AllTranslations }}
+<li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+{{ end }}
+</ul>
+
+<h1>end</h1>
+
+{{ end }}
+-->

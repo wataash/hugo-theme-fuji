@@ -1,5 +1,7 @@
-baseURL = "https://example.com"
-title = "Hugo Theme Fuji"
+# http://localhost:1313/     en
+# http://localhost:1313/ja/  ja
+baseURL = "https://blog.wataash.com"
+title = "wataash's blog"
 
 # theme = "fuji"
 hasCJKLanguage = true
@@ -7,6 +9,8 @@ enableEmoji = true
 enableRobotsTXT = true
 disableKinds = ["taxonomyTerm"]
 
+# https://github.com/gohugoio/hugo/issues/349
+# https://www.rssboard.org/rss-language-codes
 ## Change this two to switch between different language
 languageCode = "en"  # For RSS, view https://www.rssboard.org/rss-language-codes
 defaultContentLanguage = "en"  # For HTML page, now support: en, zh-hans, zh-hant, ja, nl
@@ -15,6 +19,29 @@ summaryLength = 100 # Custom summary length, add <!--more--> in post file to cus
 paginate = 10
 
 # googleAnalytics = "UA-000000000-0" # Set your Google Analytics UA here
+googleAnalytics = "UA-69723762-1"
+
+# https://gohugo.io/getting-started/configuration/
+enableGitInfo = true
+# enableInlineShortcodes = true  # https://gohugo.io/templates/shortcode-templates/
+# https://gohugo.io/content-management/multilingual/
+[languages]
+  [languages.en]
+    # http://localhost:1313/
+    # baseURL = "https://blog.wataash.com"
+    languageName = "English"
+    weight = 1.0  # no effect to public/
+    [languages.en.params]
+      baseURL2 = "https://blog.wataash.com"
+  [languages.ja]
+    # http://localhost:1314/ja/
+    # dowsn't work well (e.g. ja/search/)
+    # baseURL = "https://blog.wataash.com/ja"
+    title = "wataash's blog（にほんご）"
+    languageName = "にほんご"
+    weight = 2.0   # no effect to public/
+    [languages.ja.params]
+      baseURL2 = "https://blog.wataash.com/ja"
 
 [outputFormats]
   [outputFormats.SearchIndex]
@@ -30,8 +57,8 @@ paginate = 10
   post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 
 [params]
-  author = "DSRKafuU" # You can also set author in post front matter individually
-  subTitle = "A minimal Hugo theme."
+  author = "Wataru Ashihara" # You can also set author in post front matter individually
+  # subTitle = "A minimal Hugo theme."
 
   # Use CloudFlare Workers to accelerate the Google Analytics
   # If you are using this please comment the googleAnalytics above
@@ -51,10 +78,11 @@ paginate = 10
   showLicense = true
   showToc = true
 
+  # https://twitter.com/wataruAsh/status/1287288549448929280
   # Open Graph & Twitter Card variables
   # You can also set description and images in post front matter individually
-  description = "A minimal Hugo theme with nice theme color."
-  images = ["img/og.png"] # This will use the image called og.png in static/img folder
+  # description = "A minimal Hugo theme with nice theme color."
+  # images = ["img/og.png"] # This will use the image called og.png in static/img folder
 
   # Posts shown in homepage
   mainSections = ["post"]
@@ -63,16 +91,20 @@ paginate = 10
   # bgmImageChart = "000000"
 
   # License
-  license = "CC BY-NC-SA 4.0"
-  licenseLink = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+  # license = "CC BY-NC-SA 4.0"
+  # licenseLink = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+  license = "CC BY 4.0"
+  licenseLink = "http://creativecommons.org/licenses/by/4.0/"
 
   # Comments
   # utterances, see: https://utteranc.es/
   # utterancesRepo = "*/*"
   # utterancesIssueTerm = "pathname"
 
+  # https://disqus.com/admin/create/
   # Disqus, see: https://disqus.com/admin/install/platforms/universalcode/
   # disqusShortname = "*********"
+  disqusShortname = "wataash"
   # Also use DisqusJS for accessing from Mainland China, see: https://github.com/SukkaW/DisqusJS
   # If you want to set multiple api key, see theme's README for more details
   # disqusJSApi = "https://*********/"
@@ -107,18 +139,18 @@ paginate = 10
   tag = "tags"
 
 [menu]
-  [[menu.nav]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.nav]]
-    name = "Archives"
-    url = "/archives/"
-    weight = 2
-  [[menu.nav]]
-    name = "About"
-    url = "/about/"
-    weight = 3
+  # [[menu.nav]]
+  #   name = "Home"
+  #   url = "/"
+  #   weight = 1
+  # [[menu.nav]]
+  #   name = "Archives"
+  #   url = "/archives/"
+  #   weight = 2
+  # [[menu.nav]]
+  #   name = "About"
+  #   url = "/about/"
+  #   weight = 3
   [[menu.nav]]
     name = "Search"
     url = "/search/"
@@ -127,16 +159,20 @@ paginate = 10
     name = "RSS"
     url = "/index.xml"
     weight = 5
+  [[menu.nav]]
+    name = "wataash.com"
+    url = "https://wataash.com"
+    weight = 6
 
-  [[menu.link]]
-    name = "GitHub"
-    url = "https://github.com/amzrk2"
-    weight = 1
-  [[menu.link]]
-    name = "Twitter"
-    url = "https://twitter.com/amzrk2"
-    weight = 2
-  [[menu.link]]
-    name = "bilibili"
-    url = "https://space.bilibili.com/19767474"
-    weight = 3
+  # [[menu.link]]
+  #   name = "GitHub"
+  #   url = "https://github.com/amzrk2"
+  #   weight = 1
+  # [[menu.link]]
+  #   name = "Twitter"
+  #   url = "https://twitter.com/amzrk2"
+  #   weight = 2
+  # [[menu.link]]
+  #   name = "bilibili"
+  #   url = "https://space.bilibili.com/19767474"
+  #   weight = 3
