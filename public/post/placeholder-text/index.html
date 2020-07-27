@@ -22,10 +22,10 @@
 <meta name="theme-color" content="#ffffff" />
 
 
-<title>Placeholder Text - Hugo Theme Fuji</title>
+<title>Placeholder Text - wataash&#39;s blog</title>
 
 
-<meta name="author" content="DSRKafuU" />
+<meta name="author" content="Wataru Ashihara" />
 
 
 <meta name="description" content="Lorem Ipsum Dolor Si Amet" />
@@ -36,14 +36,11 @@
 <meta property="og:title" content="Placeholder Text" />
 <meta property="og:description" content="Lorem Ipsum Dolor Si Amet" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/post/placeholder-text/" />
-<meta property="og:image" content="https://example.com/img/og.png"/>
+<meta property="og:url" content="https://blog.wataash.com/post/placeholder-text/" />
 <meta property="article:published_time" content="2019-03-09T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-03-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-26T14:09:49+09:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://example.com/img/og.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Placeholder Text"/>
 <meta name="twitter:description" content="Lorem Ipsum Dolor Si Amet"/>
 
@@ -71,6 +68,18 @@
 
 
 
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-69723762-1');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69723762-1"></script>
+
+
 </head>
 
 <body data-theme="auto">
@@ -91,9 +100,16 @@
     <header>
     <div class="container-lg clearfix">
         <div class="col-12 header">
-            <a class="title-main" href="https://example.com">Hugo Theme Fuji</a>
+            <a class="title-main" href="https://blog.wataash.com">wataash&#39;s blog</a>
             
-            <span class="title-sub">A minimal Hugo theme.</span>
+            
+            <p><a href="https://blog.wataash.com/ja">にほんご</a></p>
+            
+            
+            
+            
+            
+            
             
         </div>
     </div>
@@ -107,11 +123,18 @@
 <article>
     
     <h2 class="post-item post-title">
-        <a href="https://example.com/post/placeholder-text/">Placeholder Text</a>
+        <a href="https://blog.wataash.com/post/placeholder-text/">Placeholder Text</a>
     </h2>
     <div class="post-item post-meta">
-        <span><ion-icon name="today"></ion-icon>&nbsp;2019-03-09</span><span><ion-icon name="file-tray"></ion-icon>&nbsp;269 words</span><span><ion-icon name="pricetags"></ion-icon>&nbsp;<a href="/tags/markdown">markdown</a>&nbsp;<a href="/tags/text">text</a>&nbsp;</span>
+        <span><ion-icon name="today"></ion-icon>&nbsp;2019-03-09&nbsp;(update:&nbsp;2020-07-26)</span><span><ion-icon name="file-tray"></ion-icon>&nbsp;269 words</span><span><ion-icon name="pricetags"></ion-icon>&nbsp;<a href="/tags/markdown">markdown</a>&nbsp;<a href="/tags/text">text</a>&nbsp;</span>
     </div>
+    
+
+
+
+
+
+
     
     
     <div class="post-content markdown-body">
@@ -156,11 +179,33 @@ Propoetides <strong>parte</strong>.</p>
 
 <div class="license markdown-body">
     <blockquote>
-        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
+               target="_blank">CC BY 4.0</a>.</p>
     </blockquote>
 </div>
 
+
+<div class="post-comment" data-comment="disqus">
+    <span class="post-comment-notloaded">
+        <ion-icon name="chatbox-ellipses"></ion-icon>&nbsp;Load comments
+    </span>
+    <div id="disqus_thread" style="display: none;"></div>
+    <script>
+        function loadComment() {
+            var commentArea = document.querySelector('.post-comment');
+            var disqus_config = function () {
+                this.page.url = 'https:\/\/blog.wataash.com\/post\/placeholder-text\/';
+                this.page.identifier = 'placeholder-text';
+            };
+            var s = document.createElement('script');
+            s.src = 'https://' + 'wataash' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            document.querySelector('#disqus_thread').removeAttribute('style');
+            (document.body || document.head).appendChild(s);
+            document.querySelector('span.post-comment-notloaded').setAttribute('style', 'display: none;');
+        }
+    </script>
+</div>
 
 
             </div>
@@ -171,23 +216,15 @@ Propoetides <strong>parte</strong>.</p>
         <ul>
             
             <li>
-                <a href="/">Home</a>
-            </li>
-            
-            <li>
-                <a href="/archives/">Archives</a>
-            </li>
-            
-            <li>
-                <a href="/about/">About</a>
-            </li>
-            
-            <li>
                 <a href="/search/">Search</a>
             </li>
             
             <li>
                 <a href="/index.xml">RSS</a>
+            </li>
+            
+            <li>
+                <a href="https://wataash.com">wataash.com</a>
             </li>
             
         </ul>
@@ -236,24 +273,7 @@ Propoetides <strong>parte</strong>.</p>
         </div>
     </div>
     
-    <div class="sidebar-item sidebar-links">
-        <h3>Links</h3>
-        <ul>
-            
-            <li>
-                <a href="https://github.com/amzrk2" target="_blank"><span>GitHub</span></a>
-            </li>
-            
-            <li>
-                <a href="https://twitter.com/amzrk2" target="_blank"><span>Twitter</span></a>
-            </li>
-            
-            <li>
-                <a href="https://space.bilibili.com/19767474" target="_blank"><span>bilibili</span></a>
-            </li>
-            
-        </ul>
-    </div>
+    
     
     
     
@@ -283,8 +303,12 @@ Propoetides <strong>parte</strong>.</p>
     <footer>
     <div class="container-lg clearfix">
         <div class="col-12 footer">
-            <span>&copy; 2020 <a href="https://example.com">DSRKafuU</a> |
-                Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/"
+            <span>&copy; 2020 <a href="https://wataash.com">Wataru Ashihara</a> |
+                Powered by 
+                   <a href="https://github.com/wataash/hugo-theme-fuji/"
+                   target="_blank">wataash-Fuji-v2</a>
+                   forked from
+                   <a href="https://github.com/amzrk2/hugo-theme-fuji/"
                    target="_blank">Fuji-v2</a> & <a href="https://gohugo.io/"
                    target="_blank">Hugo</a> </span>
         </div>

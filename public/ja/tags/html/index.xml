@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on wataash&#39;s blog（にほんご）</title>
+    <link>https://blog.wataash.com/ja/tags/html/</link>
+    <description>Recent content in html on wataash&#39;s blog（にほんご）</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.wataash.com/ja/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown Syntax (ja)</title>
+      <link>https://blog.wataash.com/ja/post/markdown-syntax/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.wataash.com/ja/post/markdown-syntax/</guid>
+      <description>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+https://gohugo.io/content-management/syntax-highlighting/
+199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218  // GetTitleFunc returns a func that can be used to transform a string to // title case. // // The supported styles are // // - &amp;#34;Go&amp;#34; (strings.Title) // - &amp;#34;AP&amp;#34; (see https://www.apstylebook.com/) // - &amp;#34;Chicago&amp;#34; (see https://www.chicagomanualofstyle.org/home.html) // // If an unknown or empty style is provided, AP style is what you get.</description>
+    </item>
+    
+  </channel>
+</rss>

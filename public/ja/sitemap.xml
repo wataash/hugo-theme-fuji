@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.wataash.com/ja/tags/css/</loc>
+    <lastmod>2020-07-27T10:48:14+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.wataash.com/tags/css/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blog.wataash.com/ja/tags/css/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.wataash.com/ja/tags/html/</loc>
+    <lastmod>2020-07-27T10:48:14+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.wataash.com/tags/html/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blog.wataash.com/ja/tags/html/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.wataash.com/ja/tags/markdown/</loc>
+    <lastmod>2020-07-27T10:48:14+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.wataash.com/tags/markdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blog.wataash.com/ja/tags/markdown/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.wataash.com/ja/post/markdown-syntax/</loc>
+    <lastmod>2020-07-27T10:48:14+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.wataash.com/post/markdown-syntax/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blog.wataash.com/ja/post/markdown-syntax/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.wataash.com/ja/post/</loc>
+    <lastmod>2020-07-27T10:48:14+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.wataash.com/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blog.wataash.com/ja/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.wataash.com/ja/tags/themes/</loc>
+    <lastmod>2020-07-27T10:48:14+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.wataash.com/tags/themes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blog.wataash.com/ja/tags/themes/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.wataash.com/ja/</loc>
+    <lastmod>2020-07-27T10:48:14+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.wataash.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blog.wataash.com/ja/"
+                />
+  </url>
+  
+</urlset>
